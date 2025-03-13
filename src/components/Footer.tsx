@@ -1,5 +1,3 @@
-import React from 'react';
-// import appPreview from '../assets/app-preview.png';
 import getStarted from '../assets/getStarted.svg'
 import googlePlay from '../assets/googlePay.svg';
 import appStore from '../assets/appStore.svg';

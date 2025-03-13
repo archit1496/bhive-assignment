@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -58,7 +58,7 @@ body {
 
 /* Features Section */
 .features {
-  padding: 40px 20px;
+  padding: 40px 0px;
 }
 
 .features h2 {
@@ -86,7 +86,7 @@ body {
 
 /* Spaces Section */
 .spaces-section {
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .spaces-section h2 {
@@ -124,7 +124,7 @@ body {
   font-size: 0.8rem;
 }
 
-.space-card img {
+.spaceImage {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -150,12 +150,51 @@ body {
   justify-content: space-between;
   border-top: 1px solid #eee;
   padding-top: 15px;
+  gap: 10px;
 }
-
+.daily-pass-day{
+  font-size: 11px;
+  color: gray;
+}
+.day-pass{
+  background-color: #0000000F;
+}
 .day-pass, .bulk-pass {
   text-align: center;
+  display: flex;
+  gap: 13px;
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+}
+.day-pass > img {
+  width: 25px;
 }
 
+.bulk-pass > img {
+  width: 25px;
+
+}
+
+.bulk-pass{
+  background-color: #FFCF4B;
+}
+.direction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.direction img{
+  width: 12px;
+}
+.kilomiterText{
+  color: #26323880;
+  font-size: 8px;
+}
+.spaceNameDiv{
+  display: flex;
+  justify-content: space-between;
+}
 .price {
   font-weight: bold;
   color: #333;
@@ -194,7 +233,7 @@ body {
 /* Footer */
 .app-footer {
   background: white;
-  padding: 40px 20px;
+  padding: 40px 0px 0px 0px;
   margin-top: 60px;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -309,33 +348,9 @@ body {
     padding: 5px;
     flex-direction: column;
   }
-  /* .logo{
-    height: 30px;
-  } */
+ 
   .feature-title{
     font-size: 12px;
   }
 }
 
-@media (max-width: 480px) {
-  /* .features-grid {
-    grid-template-columns: 1fr;
-  } */
-
-  /* .feature-item {
-    justify-content: center;
-  }
-
-  .space-card {
-    margin: 0 10px;
-  }
-
-  .store-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .store-buttons img {
-    width: 200px;
-  } */
-}

@@ -1,4 +1,3 @@
-import React from 'react';
 import affordable from '../assets/affordable.svg';
 import gymFacility from '../assets/gymFacility.svg'
 import highSpeed from '../assets/highSpeed.svg'
@@ -7,8 +6,14 @@ import comfortLounge from '../assets/comfortLounge.svg'
 import quickBooking from '../assets/quickBooking.svg'
 import sportsArea from '../assets/sportsArea.svg'
 import communityEvents from '../assets/communityEvents.svg'
+
+interface Feature {
+  src: string;  
+  title: string;
+}
+
 const Features = () => {
-  const features = [
+  const features: Feature[] = [
     { src: communityEvents, title: 'Community Events' },
     { src: gymFacility, title: 'Gym Facilities' },
     { src: highSpeed, title: 'High-Speed WiFi' },
@@ -25,7 +30,6 @@ const Features = () => {
       <div className="features-grid">
         {features.map((feature, index) => (
           <div key={index} className="feature-item">
-            {/* <span className="feature-icon">{feature.icon}</span> */}
             <img src={feature.src} alt={feature.title} className="logo" />
             <p className="feature-title">{feature.title}</p>
           </div>
